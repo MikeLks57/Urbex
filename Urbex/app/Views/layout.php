@@ -50,7 +50,9 @@
 			</div><!-- /.container-fluid -->
 		</nav><!-- /.nav.navbar-default -->	
 	</header><!-- /.main-header -->
-
+	<section>
+		<?= $this->section('messages') ?>
+	</section>
 	<main>
         <section class="main-section">
         	<div class="container-fluid">
@@ -66,23 +68,10 @@
 	<footer>
 	</footer>
 
-	<div class="container">
+	
 
-	<section>
-		<?= $this->section('messages') ?>
-	</section>
+	
 
-		<header>
-			<h1>W :: <?= $this->e($title) ?></h1>
-		</header>
-
-		<section>
-			<?= $this->section('main_content') ?>
-		</section>
-
-		<footer>
-		</footer>
-	</div>
 
 </body>
 </html>
