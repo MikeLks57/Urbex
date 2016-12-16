@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title><?= $this->e($title) ?></title>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
 
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -19,8 +20,6 @@
 
 	<script src="<?= $this->assetUrl('js/script.js') ?>"></script>
 
-
-	
 </head>
 <body>
 	<header class="main-header">
@@ -66,6 +65,24 @@
 
 	<footer>
 	</footer>
+
+	<div class="container">
+
+	<section>
+		<?= $this->section('messages') ?>
+	</section>
+
+		<header>
+			<h1>W :: <?= $this->e($title) ?></h1>
+		</header>
+
+		<section>
+			<?= $this->section('main_content') ?>
+		</section>
+
+		<footer>
+		</footer>
+	</div>
 
 </body>
 </html>
