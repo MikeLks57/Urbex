@@ -1,17 +1,54 @@
 html, body {
-	font-family: Consolas, monaco, monospace;
-	background-color: #272822;
-	color: #F8F8F2;
+	font-family: Consolas, monaco, monospace;	
+	color: black;
 }
 
-.container {
-	margin: 50px;
+div#eachItem {
+	border: 1px solid black;
+}
+
+div.eachPic {
+	border: 1px solid red;
+}
+
+div.eachInfos {
+	border: 1px solid green;
+}
+
+div.eachDetail {
+	border: 1px solid yellow;
+}
+
+div.row.pagination {
+	background-color: pink;
+	display: flex;
+	justify-content: justify;
+	text-align: center;
+}
+
+div.eachPicture {
+	background-color: #0CE7FB;
+}
+
+div.eachPicture img {
+	border: 5px solid red;
+	margin: auto;
+}
+
+div.eachVote {
+	background-color: #B2F7B2;
+}
+
+div.eachVote img {
+	border: 2px solid black;
+	margin: auto;
 }
 
 a {
 	text-decoration: none;
-	color: #A6E22E;
 }
+
+
 
 a:hover {
 	color: #F92672;

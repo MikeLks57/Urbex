@@ -1,7 +1,9 @@
 <?php
 	
 	$w_routes = array(
-		['GET', '/', 'Default#home', 'default_home'],
+		['GET', '/', 'Pictures#getAllPictures', 'default_home'],
+		['GET', '/page', 'Pictures#getAllPictures', 'default_page_home'],
+		['GET', '/page/[i:page]', 'Pictures#getAllPictures', 'pictures_getall'],
 		['GET|POST',	'/login',									'Default#login',			'default_login'],
 		['GET',			'/logout',									'Default#logout',			'default_logout'],
 		['GET|POST',	'/signin',									'Default#signin',				'default_signin'],
