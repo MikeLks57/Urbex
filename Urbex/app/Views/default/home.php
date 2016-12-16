@@ -37,7 +37,7 @@
 						<img src="<?= $this->assetUrl('img/'. $pic['url']) ?>" class="img-responsive" alt="Responsive image" width="250px" height="100px">
 					</div>
 					<div class="eachVote col-xs-12 col-md-12">
-						<img src="<?= $this->assetUrl('img/pouceVert.png') ?>" class="img-responsive pouceVert" alt="Pouce levé" width="50px" height="50px">
+						<img src="<?= $this->assetUrl('img/pouceVert.jpg') ?>" class="img-responsive pouceVert" alt="Pouce levé" width="50px" height="50px">
 					</div>
 				</div>
 			</div>
@@ -82,7 +82,4 @@
 		<?php endif ?>
 	</nav>
 
-	<h2>Let's code.</h2>
-	<p>Vous avez atteint la page d'accueil. Bravo.</p>
-	<p>Et maintenant, RTFM dans <strong><a href="../docs/tuto/" title="Documentation de W">docs/tuto</a></strong>.</p>
 <?php $this->stop('main_content') ?>

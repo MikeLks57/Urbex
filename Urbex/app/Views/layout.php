@@ -32,11 +32,11 @@
 			        	<span class="icon-bar"></span>
 			        	<span class="icon-bar"></span>
 			      	</button>
-			      	<a class="navbar-brand" href="#">Urbex World</a>
+			      	<a class="navbar-brand" href="<?= $this->url('default_home') ?>">Urbex World</a>
 			    </div><!-- /.navbar-header -->
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			    	<ul class="nav navbar-nav">
-				        <li class="active"><a href="#">Urbex Pics<span class="sr-only">(current)</span></a></li>
+				        <li class="active"><a href="<?= $this->url('default_home') ?>">Urbex Pics<span class="sr-only">(current)</span></a></li>
 				        <li><a href="">Partager</a></li>
 				        <li><a href="">A propos</a></li>
 			      	</ul>
@@ -50,9 +50,11 @@
 			</div><!-- /.container-fluid -->
 		</nav><!-- /.nav.navbar-default -->	
 	</header><!-- /.main-header -->
+
 	<section>
 		<?= $this->section('messages') ?>
 	</section>
+
 	<main>
         <section class="main-section">
         	<div class="container-fluid">
@@ -67,11 +69,6 @@
 
 	<footer>
 	</footer>
-
-	
-
-	
-
 
 </body>
 </html>
